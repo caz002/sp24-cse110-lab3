@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <title>Meeting Minutes</title>
+  </head>
+  <body>
+    <header>
+        <h1>Meeting Notes</h1>
+        <h2>Date</h2>
+        <p>Monday, April 8th, 2024</p>
+        <h2>Attendees</h2>
+        <ul>
+            <li>Jermey</li>
+            <li>Jeannette</li>
+            <li>Jason</li>
+            <li>Jacob</li>
+            <li>Janet</li>
+            <li>Jamie</li>
+            <li>Jihong</li>
+            <li>Jamiel</li>
+            <li>Jasmine</li>
+            <li>Joanna</li>
+        </ul>
+        <h2>Important Links</h2>
+        <nav>
+            <a href="https://drive.google.com/drive/folders/1eZvBfXwS8hc13HEzBfdDcxykGupB1UdI?usp=sharing">Google Drive</a> |
+            <a href="https://github.com/caz002/Lab2_Starter">Github Repository</a>
+        </nav>
+    </header>
+    <div class="main-container">
+    <main>
+        <hr>
+        <h1>Annoucements</h1>
+            <h2>General</h2>
+            <ol>
+                <li>We are running out of funds. We only have -$0.04 left. We must either plan a fundraiser, or talk to more companies that can sponsor us.</li>
+                <li>The showcase date has gotten pushed back to <span>June 5th, 2024</span>. We have an extra 2 weeks to prepare the website and rocket.</li>
+                <li>A new person Jayley is interested in joining our team. We will vote on including her. Below is her resume:</li> 
+                <img src="images/resume.png" alt = "Jayley's Resume" width="500",height="700">
+            </ol>
+        <hr>
+        <div class="summary-container">
+        <h1>Summary</h1>
+            <div class="last-meeting-container">
+            <details>
+                <summary>Last Meeting:</summary>
+                <h2>Monday, April 1st, 2024</h2>
+                <h3>Created Rough Draft of Website</h3>
+                    <p>Last weekend, <b>Janet</b> and <b>Jacob</b> created a rough draft of the homepage of our website. Below is a whiteboard of their notes.</p>
+                    <img src="images/websitedesign.png" alt = "figjam of webdesign">
+                <h3>Gathered Feedback on Usability</h3>
+                    <p><b>Jihong</b>, <b>Joanna</b>, and <b>Jeremey</b> created a poll and posted it on various servers to get feedback on our character designs</p>
+                    <img src="images/bargraph.png" alt = "bargraph of poll" width="700" height="500">
+            </details>
+            </div>
+            <div class="this-meeting-container">
+            <details>
+                <summary>This Meeting:</summary>
+                <h2>Monday, April 8th, 2024</h2>
+                <h3>Begin Backend of Website</h3>
+                    <p>We are assigning <b>Janet</b> and <b>Jamiel</b> to work on the backend of the website, and begin creating the login features.</p>
+                <h3>Talk to Sponsors</h3>
+                    <p><b>Jason</b> will meet with our sponsor <strong>Apple</strong> on Thursday to try to get sponsorship for our website's domain, as well as funding to buy the spaceship.</p>
+                    <video controls>
+                        <source src="images/Negotiation.mp4" type ="video/mp4">
+                    </video>
+                </details>
+            </div>
+        </div>
+        <hr>
+    </main>
+    </div>
+    <div class="form-container">
+        <h1>Reviewing Applicants</h1>
+        <p>Please answer the questions below and vote to add Jayley to our team! Your response is anonymous.</p>
+        <form>        
+            <fieldset>
+                <label for = "hiring">Should we hire Jayley?</label>
+                <label for="yes">Yes</label>
+                <input type="checkbox" name = "yes">
+                <label for="no">No</label>
+                <input type="checkbox" name = "no"><br>
+                <label for="qualifications">Do you agree with this statement? <i>Jayley could positively contribute to our team.</i></label>
+                <input list="options">
+                <datalist id="options">
+                    <option value="Yes"></option>
+                    <option value="Maybe"></option>
+                    <option value="Ehh..."></option>
+                    <option value="Definitely Not"></option>
+                </datalist>
+                <br>
+                <label for="likable">On a scale of <em>1</em> to <em>5</em>, rate how much you like Jayley.</label>
+                <label for="1">1</label>
+                <input type="radio">
+                <label for="2">2</label>
+                <input type="radio">
+                <label for="3">3</label>
+                <input type="radio">
+                <label for="4">4</label>
+                <input type="radio">
+                <label for="5">5</label>
+                <input type="radio">
+                <br>
+                <textarea rows = '10' cols="50">Please explain your reasoning.</textarea><br>
+                <label for="sign-date">I verify that I answered this form honestly, and sign it by typing my name, and entering the date.</label>
+                <input type="text">
+                <input type="date">
+                <br>
+                <button type="button">Submit Response</button>
+            </fieldset>
+        </form>
+    </div>
+    <footer>This document is not for sale and should not be reproduced.</footer>
+  </body>
+</html>
