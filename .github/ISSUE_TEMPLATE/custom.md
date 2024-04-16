@@ -1,6 +1,6 @@
 ---
 name: Custom issue template
-about: Describe this issue template's purpose here.
+about: Describe the issue in the website.
 title: ''
 labels: ''
 assignees: ''
@@ -11,4 +11,4 @@ assignees: ''
 
 # Describe the issue.
 
-# Rate on a scale of 1-5 how much priority the issue has, with 5 being of least priority.
+# What features could be added/modified to fix the issue?
