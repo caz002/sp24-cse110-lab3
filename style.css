@@ -1,0 +1,26 @@
+header{
+    background-color: #003049;
+    color: #FDF0D5;
+}
+header h1{
+    color: #FDF0D5;
+}
+header h2{
+    color: #669BBC;
+}
+
+main{
+    background-color: #FDF0D5;
+    color: color(display-p3 0.5 0 0);
+}
+.form-container{
+    background-color: hsl(0, 57%, 21%);
+    color: #FDF0D5;
+}
+.form-container h1{
+    color: lightblue;
+}
+footer{
+    background-color: #003049;
+    color: color-mix(in srgb, #003049 25%, #FDF0D5 75%);
+}
