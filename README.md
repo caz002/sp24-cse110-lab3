@@ -1,2 +1,2 @@
 # Lab 2 - Starter
-URL of published website: https://caz002.github.io/Lab2_Starter/
+URL of published website: http://caz002.github.io/sp24-cse110-lab3/
