@@ -24,3 +24,18 @@ footer{
     background-color: #003049;
     color: color-mix(in srgb, #003049 25%, #FDF0D5 75%);
 }
+#resume-pic{
+    width: 4in;
+    height: 15cm;
+}
+img{
+    width: 700px;
+    height: 500px;
+}
+video{
+    width: 100vw;
+    height: 50vh; 
+}
+details{
+    width: 30rem;
+}
