@@ -1,6 +1,47 @@
+/* Header Portion */
 header{
     background-color: #003049;
     color: #FDF0D5;
+    display: grid;
+    grid-template-rows: 80px 1fr 100px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+        "date title"
+        "attendance title"
+        "links title";
+}
+.title{
+    background-color: #FDF0D5;
+    grid-row:span 3;
+    grid-area: title;
+}
+.title > h1{
+    background-color: #003049;
+}
+.date{
+    height: 20px;
+    grid-area: date;
+    display:flex;
+    align-items: baseline;
+    gap: 0px 20px;
+}
+ul li{
+    display:inline;
+    margin: 20px 20px 10px 10px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color:#FDF0D5;
+    border-bottom-right-radius:10px;
+}
+.links a{
+    color: #FDF0D5; 
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+.attendance{
+    .leader ~ .designer{
+        color: #669BBC;
+    }
 }
 header h1{
     color: #FDF0D5;
@@ -9,9 +50,47 @@ header h2{
     color: #669BBC;
 }
 
+/* Main Body*/
 main{
     background-color: #FDF0D5;
     color: color(display-p3 0.5 0 0);
+}
+/*Annoucements*/
+.annoucements{
+    display:flex;
+    flex-direction:row;
+}
+/*Summary*/
+.subsection{
+    position: static;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    /*sets margin/spacing between different elements in a section*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:5px;
+    margin-right:5px;
+}
+.taskcard{
+    border-width: 2px; 
+    border-style: solid;
+    color: #FDF0D5;
+    border-color: #669BBC;
+    background-color: #003049;
+    border-radius: 5px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    padding-left:10px;
+    min-width: 100px;
+}
+.mystery-taskcard{
+    display:none;
+}
+.comments-container .taskcard{
+    margin:auto;
 }
 .form-container{
     background-color: hsl(0, 57%, 21%);
@@ -20,22 +99,31 @@ main{
 .form-container h1{
     color: lightblue;
 }
+input[type = "text"]{
+    font-size: 2rem;
+    color: red;
+}
+/*Footer*/
 footer{
+    position:fixed;
+    bottom: 0;
+    width:100vw;
+    height:2vh;
     background-color: #003049;
     color: color-mix(in srgb, #003049 25%, #FDF0D5 75%);
 }
+/*Images and Video*/
 #resume-pic{
     width: 4in;
     height: 15cm;
 }
+
 img{
-    width: 700px;
-    height: 500px;
+    width: 400px;
+    height: 300px;
+    border: 10px solid #FDF0D5;
 }
 video{
-    width: 100vw;
-    height: 50vh; 
-}
-details{
-    width: 30rem;
+    width: 400px;
+    height: 300px; 
 }
