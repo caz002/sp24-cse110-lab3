@@ -8,41 +8,53 @@
   </head>
   <body>
     <header>
-        <h1>Meeting Notes</h1>
-        <h2>Date</h2>
-        <p>Monday, April 8th, 2024</p>
-        <h2>Attendees</h2>
-        <ul>
-            <li>Jermey</li>
-            <li>Jeannette</li>
-            <li>Jason</li>
-            <li>Jacob</li>
-            <li>Janet</li>
-            <li>Jamie</li>
-            <li>Jihong</li>
-            <li>Jamiel</li>
-            <li>Jasmine</li>
-            <li>Joanna</li>
-        </ul>
-        <h2>Important Links</h2>
-        <nav>
-            <a href="https://drive.google.com/drive/folders/1eZvBfXwS8hc13HEzBfdDcxykGupB1UdI?usp=sharing">Google Drive</a> |
-            <a href="https://github.com/caz002/Lab2_Starter">Github Repository</a>
-        </nav>
+        <div class = "title">
+            <h1>Meeting Notes</h1>
+        </div>
+        <div class="date">
+            <h2>Date</h2>
+            <p>Monday, April 8th, 2024</p>
+        </div>
+        <div class="attendance">
+            <h2>Attendees</h2>
+            <ul>
+                <li class = "leader">Jermey</li>
+                <li class = "leader">Jeannette</li>
+                <li class = "designer">Jason</li>
+                <li>Jacob</li>
+                <li>Janet</li>
+                <li>Jamie</li>
+                <li>Jihong</li>
+                <li>Jamiel</li>
+                <li>Jasmine</li>
+                <li>Joanna</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h2>Important Links</h2>
+            <nav>
+                <a href="https://drive.google.com/drive/folders/1eZvBfXwS8hc13HEzBfdDcxykGupB1UdI?usp=sharing">Google Drive</a> |
+                <a href="https://github.com/caz002/Lab2_Starter">Github Repository</a>
+            </nav>
+        </div>
     </header>
     <div class="main-container">
     <main>
         <hr>
-        <h1>Annoucements</h1>
-            <h2>General</h2>
-            <ol>
-                <li>We are running out of funds. We only have -$0.04 left. We must either plan a fundraiser, or talk to more companies that can sponsor us.</li>
-                <li>The showcase date has gotten pushed back to <span>June 5th, 2024</span>. We have an extra 2 weeks to prepare the website and rocket.</li>
-                <li>A new person Jayley is interested in joining our team. We will vote on including her. Below is her resume:<br> 
-                <img id = "resume-pic" src="images/resume.png" alt = "Jayley's Resume">
-                </li>
-            </ol>
-        <hr>
+            <h1>Annoucements</h1>
+                <div class = "annoucements">
+                    <div class = "general-list">
+                        <h2>General</h2>
+                        <ol>
+                            <li>We are running out of funds. We only have -$0.04 left. We must either plan a fundraiser, or talk to more companies that can sponsor us.</li>
+                            <li>The showcase date has gotten pushed back to <span>June 5th, 2024</span>. We have an extra 2 weeks to prepare the website and rocket.</li>
+                            <li>A new person Jayley is interested in joining our team. We will vote on including her. A photo of her resume is displayed.</li>
+                        </ol>
+                    </div>
+                    <img id = "resume-pic" src="images/resume.png" alt = "Jayley's Resume">
+                
+                </div>
+            <hr>
         <div class="summary-container">
         <h1>Summary</h1>
             <div class="last-meeting-container">
@@ -50,16 +62,26 @@
             <details>
                 <summary>Last Meeting:</summary>
                 <h2>Monday, April 1st, 2024</h2>
-                <h3>Created Rough Draft of Website</h3>
-                    <p>Last weekend, <b>Janet</b> and <b>Jacob</b> created a rough draft of the homepage of our website. Below is a whiteboard of their notes.</p>
-                    <img src="images/websitedesign.png" alt = "figjam of webdesign">
-                    <p>Here is audio of their meeting:</p>
-                    <audio controls>
-                        <source src="images/meetingaudio.mp3" type="audio/mp3">
-                    </audio>
-                <h3>Gathered Feedback on Usability</h3>
-                    <p><b>Jihong</b>, <b>Joanna</b>, and <b>Jermey</b> created a poll and posted it on various servers to get feedback on our character designs</p>
-                    <img src="images/bargraph.png" alt = "bargraph of poll">
+                <div class = "subsection">
+                    <div class = "taskcard">
+                        <h3>Created Rough Draft of Website</h3>
+                            <p>Last weekend, <b>Janet</b> and <b>Jacob</b> created a rough draft of the homepage of our website. Below is a whiteboard of their notes.</p>
+                            <img src="images/websitedesign.png" alt = "figjam of webdesign">
+                            <p>Here is audio of their meeting:</p>
+                            <audio controls>
+                                <source src="images/meetingaudio.mp3" type="audio/mp3">
+                            </audio>
+                    </div>
+                    <div class = "taskcard">
+                        <h3>Gathered Feedback on Usability</h3>
+                            <p><b>Jihong</b>, <b>Joanna</b>, and <b>Jermey</b> created a poll and posted it on various servers to get feedback on our character designs.</p>
+                            <img src="images/bargraph.png" alt = "bargraph of poll">
+                    </div>
+                    <div class = "taskcard">
+                        <h3>Created Sound Effects</h3>
+                            <p><b>Jeanette</b> created sound effects for us to use later in the project.</p>
+                    </div>
+                </div>
             </details>
             </section>
             </div>
@@ -68,25 +90,44 @@
             <details>
                 <summary>This Meeting:</summary>
                 <h2>Monday, April 8th, 2024</h2>
-                <h3>Begin Backend of Website</h3>
-                    <p>We are assigning <b>Janet</b> and <b>Jamiel</b> to work on the backend of the website, and begin creating the login features.</p>
-                <h3>Talk to Sponsors</h3>
-                    <p><b>Jason</b> will meet with our sponsor <strong>Apple</strong> on Thursday to try to get sponsorship for our website's domain, as well as funding to buy the spaceship.</p>
-                    <video controls>
-                        <source src="images/Negotiation.mp4" type ="video/mp4">
-                    </video>
+                <div class="subsection">
+                    <div class="taskcard">
+                        <h3>Begin Backend of Website</h3>
+                            <p>We are assigning <b>Janet</b> and <b>Jamiel</b> to work on the backend of the website, and begin creating the login features.</p>
+                            <p></p>
+                    </div>
+                    <div class="taskcard">
+                        <h3>Talk to Sponsors</h3>
+                            <p><b>Jason</b> will meet with our sponsor <strong>Apple</strong> on Thursday to try to get sponsorship for our website's domain, as well as funding to buy the spaceship.</p>
+                            <video controls>
+                                <source src="images/Negotiation.mp4" type ="video/mp4">
+                            </video>
+                    </div>
+                </div>
             </details>
             </section>
             </div>
-            <section>
-            <details>
-                <summary>Comments:</summary>
-                <h2>Website Design</h2>
-                <p><b>Janet</b> commented that the color palette is ugly, and we need to hire a new frontend developer. <b>Jihong</b> commented that we should create a new logo. </p>
-                <h2>Sponsors</h2>
-                <p><b>Jacob</b> commented that we could ask Google to sponsor us. <b>Jason</b> commented that we need to reach out to new people/companies, and we should stop spending money on company socials.</p>
-            </details>
-            </section>
+            <div class="comments-container">
+                <section>
+                <details>
+                    <summary>Comments:</summary>
+                    <div class="subsection">
+                        <div class="taskcard">
+                            <h2>Website Design</h2>
+                            <p><b>Janet</b> commented that the color palette is ugly, and we need to hire a new frontend developer. <b>Jihong</b> commented that we should create a new logo. </p>
+                        </div>
+                        <div class="taskcard">
+                            <h2>Sponsors</h2>
+                            <p><b>Jacob</b> commented that we could ask Google to sponsor us. <b>Jason</b> commented that we need to reach out to new people/companies, and we should stop spending money on company socials.</p>
+                            <p>Generally, the group is interested in getting at least 5 new sponsors a week.</p>
+                        </div>
+                        <div class="mystery-taskcard">
+                            <p>This is a mystery taskcard! Congrats on finding it, since it can't be visible on the page.</p>
+                        </div>
+                    </div>
+                </details>
+                </section>
+            </div>
         </div>
         <hr>
     </main>
@@ -136,9 +177,11 @@
                 <input type="radio" id = "5">
                 <br>
                 <textarea>Please explain your reasoning.</textarea><br>
-                <label for="sign-date">I verify that I answered this form honestly, and sign it by typing my name, and entering the date.</label>
-                <input type="text" id="sign-date">
-                <input type="date">
+                <div class="signature">
+                    <p>I verify that I answered this form honestly, and sign it by typing my name, and entering the date.</p>
+                    <input type="text">
+                    <input type="date">
+                </div>
                 <br>
                 <button type="button">Submit Response</button>
             </fieldset>
