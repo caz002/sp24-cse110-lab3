@@ -3,27 +3,33 @@ header{
     background-color: #003049;
     color: #FDF0D5;
     display: grid;
-    grid-template-rows: 80px 1fr 100px;
+    font-family: "Newsreader", sans-serif;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 3fr;
     grid-template-areas:
         "date title"
         "attendance title"
         "links title";
+    justify-content: center;
+    height:auto;
+    overflow-wrap: break-word;
 }
 .title{
-    background-color: #FDF0D5;
+    --main-color:#FDF0D5;
+    background-color: var(--main-color, lightblue);
     grid-row:span 3;
     grid-area: title;
 }
 .title > h1{
     background-color: #003049;
+    font-size:100px;
+    text-align: center;
+    font-style: italic;
+    overflow-wrap: break-word;
+
 }
 .date{
-    height: 20px;
     grid-area: date;
-    display:flex;
-    align-items: baseline;
-    gap: 0px 20px;
 }
 ul li{
     display:inline;
@@ -32,6 +38,9 @@ ul li{
     border-bottom-style: solid;
     border-bottom-color:#FDF0D5;
     border-bottom-right-radius:10px;
+}
+.links{
+    padding-bottom: 10px;
 }
 .links a{
     color: #FDF0D5; 
@@ -54,13 +63,25 @@ header h2{
 main{
     background-color: #FDF0D5;
     color: color(display-p3 0.5 0 0);
+    font-family: "Newsreader", sans-serif;
+}
+main > h1{
+    font-style:italic;
+    text-align: center;
 }
 /*Annoucements*/
 .annoucements{
     display:flex;
     flex-direction:row;
 }
+span{
+    text-decoration: underline #003049;
+}
 /*Summary*/
+.summary-container > h1{
+    font-style:italic;
+    text-align: center;
+}
 .subsection{
     position: static;
     display:flex;
@@ -74,6 +95,7 @@ main{
     margin-right:5px;
 }
 .taskcard{
+    text-align: center;
     border-width: 2px; 
     border-style: solid;
     color: #FDF0D5;
@@ -95,9 +117,16 @@ main{
 .form-container{
     background-color: hsl(0, 57%, 21%);
     color: #FDF0D5;
+    font-family: "Newsreader", sans-serif;
+
+    
 }
 .form-container h1{
     color: lightblue;
+    text-align:center;
+    font-style:italic;
+    font-size: 50px;
+    padding-top:5vh;
 }
 input[type = "text"]{
     font-size: 2rem;
@@ -105,6 +134,7 @@ input[type = "text"]{
 }
 /*Footer*/
 footer{
+    font-family: "Newsreader", sans-serif;
     position:fixed;
     bottom: 0;
     width:100vw;
