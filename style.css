@@ -120,17 +120,19 @@ span{
     padding-left:10px;
     min-width: 100px;
 }
+/* Makes taskcard light blue when hovered over*/
 .taskcard:hover{
     transform:scale(1.2);
     transition: transform 0.5s ease;
     background-color:#669BBC;
 }
+/*Adds light blue shadow to taskcard when clicked*/
 .taskcard:active{
     box-shadow: 0 0 100px rgba(37, 135, 165, 0.9);
 }
 
 p:has(+audio){
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; /*Increase spacing between text and audio elements*/
 }
 .mystery-taskcard{
     display:none;
@@ -138,6 +140,7 @@ p:has(+audio){
 .comments-container .taskcard{
     margin:auto;
 }
+/* Form Section*/
 .form-container * {
     background-color: hsl(0, 57%, 21%);
     color: #FDF0D5;
@@ -157,7 +160,7 @@ p:has(+audio){
 }
 input[type = "text"]{
     font-size: 2rem;
-    color: red;
+    color: red; /* Makes it easier to see input when putting in name*/
 }
 /*Footer*/
 footer{
@@ -189,6 +192,7 @@ img, video{
     summary{
         font-size: 30px;
     }
+    /*Improves readability in form section*/
     .form-container{
         font-size:40px;
     }
