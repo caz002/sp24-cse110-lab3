@@ -47,14 +47,16 @@ ul li{
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
 }
-.links a:hover{
-    color: #FFF;
-
-}
-.attendance{
-    .leader ~ .designer{
-        color: #669BBC;
+.links{
+    & > a{
+        &:hover{
+            color: #FFF;
+        }
     }
+}
+
+.leader ~ .designer{
+    color: #669BBC;
 }
 header h1{
     color: #FDF0D5;
@@ -149,14 +151,13 @@ p:has(+audio){
 .form-container {
     background-color: hsla(0, 57%, 21%, 0.9); 
 }
-.form-container{
-    & > h1{
-        color: lightblue;
-        text-align:center;
-        font-style:italic;
-        font-size: 50px;
-        padding-top:5vh;
-    }
+
+.form-container > h1{
+    color: lightblue;
+    text-align:center;
+    font-style:italic;
+    font-size: 50px;
+    padding-top:5vh;
 }
 input[type = "text"]{
     font-size: 2rem;
