@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
     <title>Meeting Minutes</title>
+    <style>
+        #timeid{
+            text-transform: uppercase;
+        }
+    </style>
   </head>
   <body>
     <header>
@@ -48,7 +53,7 @@
             <h1>Annoucements</h1>
                 <div class = "annoucements">
                     <div class = "general-list">
-                        <h2>General</h2>
+                        <h2 class="blue-text">General</h2>
                         <ol>
                             <li>We are running out of funds. We only have -$0.04 left. We must either plan a fundraiser, or talk to more companies that can sponsor us.</li>
                             <li>The showcase date has gotten pushed back to <span>June 5th, 2024</span>. We have an extra 2 weeks to prepare the website and rocket.</li>
@@ -69,7 +74,7 @@
                 <div class = "subsection">
                     <div class = "taskcard">
                         <h3>Created Rough Draft of Website</h3>
-                            <p>Last weekend, <b>Janet</b> and <b>Jacob</b> created a rough draft of the homepage of our website. Below is a whiteboard of their notes.</p>
+                            <p><span id="timeid">Last weekend</span>, <b style = "font-style:italic">Janet</b> and <b>Jacob</b> created a rough draft of the homepage of our website. Below is a whiteboard of their notes.</p>
                             <img src="images/websitedesign.png" alt = "figjam of webdesign">
                             <p>Here is audio of their meeting:</p>
                             <audio controls>
@@ -160,7 +165,8 @@
                 <label for="no">No</label>
                 <input type="checkbox" id="no"><br>
                 <label >Do you agree with this statement? <i>Jayley could positively contribute to our team.</i></label>
-                <input list="options">
+                <br>
+                <input list="options" id = "contribute-rating">
                 <datalist id="options">
                     <option value="Yes"></option>
                     <option value="Maybe"></option>
@@ -180,11 +186,11 @@
                 <label for="5">5</label>
                 <input type="radio" id = "5">
                 <br>
-                <textarea>Please explain your reasoning.</textarea><br>
+                <textarea id="reasoninginput">Please explain your reasoning.</textarea><br>
                 <div class="signature">
                     <p>I verify that I answered this form honestly, and sign it by typing my name, and entering the date.</p>
-                    <input type="text">
-                    <input type="date">
+                    <input type="text" id ="signature">
+                    <input type="date" id ="dateinput">
                 </div>
                 <br>
                 <button type="button">Submit Response</button>

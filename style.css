@@ -47,6 +47,10 @@ ul li{
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
 }
+.links a:hover{
+    color: #FFF;
+
+}
 .attendance{
     .leader ~ .designer{
         color: #669BBC;
@@ -74,6 +78,13 @@ main > h1{
     display:flex;
     flex-direction:row;
 }
+h2.blue-text{
+    color: #669BBC;
+}
+  
+header h2 + p{
+    font-style:italic;
+}
 span{
     text-decoration: underline #003049;
 }
@@ -94,12 +105,13 @@ span{
     margin-left:5px;
     margin-right:5px;
 }
+
 .taskcard{
     text-align: center;
     border-width: 2px; 
     border-style: solid;
     color: #FDF0D5;
-    border-color: #669BBC;
+    border-color: rgb(102, 155, 188);
     background-color: #003049;
     border-radius: 5px;
     padding-top:10px;
@@ -108,25 +120,40 @@ span{
     padding-left:10px;
     min-width: 100px;
 }
+.taskcard:hover{
+    transform:scale(1.2);
+    transition: transform 0.5s ease;
+    background-color:#669BBC;
+}
+.taskcard:active{
+    box-shadow: 0 0 100px rgba(37, 135, 165, 0.9);
+}
+
+p:has(+audio){
+    margin-bottom: 2rem;
+}
 .mystery-taskcard{
     display:none;
 }
 .comments-container .taskcard{
     margin:auto;
 }
-.form-container{
+.form-container * {
     background-color: hsl(0, 57%, 21%);
     color: #FDF0D5;
     font-family: "Newsreader", sans-serif;
-
-    
 }
-.form-container h1{
-    color: lightblue;
-    text-align:center;
-    font-style:italic;
-    font-size: 50px;
-    padding-top:5vh;
+.form-container {
+    background-color: hsla(0, 57%, 21%, 0.9); 
+}
+.form-container{
+    & > h1{
+        color: lightblue;
+        text-align:center;
+        font-style:italic;
+        font-size: 50px;
+        padding-top:5vh;
+    }
 }
 input[type = "text"]{
     font-size: 2rem;
@@ -148,12 +175,55 @@ footer{
     height: 15cm;
 }
 
-img{
+img, video{
     width: 400px;
     height: 300px;
     border: 10px solid #FDF0D5;
 }
-video{
-    width: 400px;
-    height: 300px; 
+
+/*Mobile View*/
+@media (width <= 800px) {
+    .general-list{
+        font-size: 30px;
+    }
+    summary{
+        font-size: 30px;
+    }
+    .form-container{
+        font-size:40px;
+    }
+    input{
+        width: 50px;
+        height: 50px;
+    }
+    #contribute-rating{
+        width: 150px;
+        font-size:50px;
+    }
+    #namespace{
+        width:200px;
+        font-size: 50px;
+    }
+    #reasoninginput{
+        width:100vw;
+        height:auto;
+        font-size:50px;
+    }
+    #dateinput{
+        font-size: 30px;
+        width:300px;
+    }
+    #signature{
+        width:400px;
+    }
+    button{
+        width: 300px;
+        height: 100px;
+        font-size: 40px;
+    }
+    footer{
+        font-size:30px;
+        height:10vh;
+        text-wrap:wrap;
+    }
 }
