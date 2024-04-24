@@ -12,7 +12,10 @@ header{
         "links title";
     justify-content: center;
     height:auto;
+    width: auto;
     overflow-wrap: break-word;
+    word-wrap: break-word;
+
 }
 header > h2{
     font-size: 1rem;
@@ -25,7 +28,7 @@ header > h2{
 }
 .title > h1{
     background-color: #003049;
-    font-size:5rem;
+    font-size:20px;
 
     text-align: center;
     font-style: italic;
